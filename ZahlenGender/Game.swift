@@ -9,7 +9,7 @@ import Foundation
 
 class Game: ObservableObject {
     @Published var players: [Player]
-    @Published var round: Int = 1
+    @Published var round: Int = 0
     @Published var message: String = ""
     @Published var currentPlayerIndex: Int = 0
     @Published var showScore: Bool = false

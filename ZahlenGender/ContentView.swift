@@ -4,6 +4,13 @@
 //
 //  Created by Markus Zemke on 17.06.24.
 //
+// TODO: Highscore hinzufügen
+// TODO: Highscore mit Namen abspeichern und bei jeder Runde neu auslesen
+// TODO: Emailanmeldung mit Firebase
+// TODO: Erstellen eines Profils
+// TODO: Erstellen eines Onlineraums
+// TODO: Mehrspielermodus mit anderen Handys
+// TODO: Chatfunktion während des Spiels
 
 import SwiftUI
 
