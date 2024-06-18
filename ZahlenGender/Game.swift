@@ -86,7 +86,17 @@ class Game: ObservableObject {
                 showScore = true
             } else if currentPlayer.attemptsLeft == 0 {
                 message = "Leider hast du alle Versuche aufgebraucht."
-                nextPlayer()
+                if currentPlayer.score > highscore {
+                    highscore = currentPlayer.score
+                }
+                players.removeAll { $0.id == currentPlayer.id }
+                if players.isEmpty {
+                    message = "Alle Spieler haben verloren. Spiel ist vorbei."
+                    showScore = true
+                    return
+                } else {
+                    nextPlayer()
+                }
             }
         }
 
