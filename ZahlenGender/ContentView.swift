@@ -4,7 +4,6 @@
 //
 //  Created by Markus Zemke on 17.06.24.
 //
-// TODO: Highscore hinzufügen
 // TODO: Highscore mit Namen abspeichern und bei jeder Runde neu auslesen
 // TODO: Emailanmeldung mit Firebase
 // TODO: Erstellen eines Profils
@@ -26,6 +25,7 @@ struct ContentView: View {
         VStack {
             if !showGameScreen {
                 VStack {
+                    Text("Highscore: \(game.highscore)\n\n")
                     TextField("Spielername", text: $playerName)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding()
@@ -78,6 +78,8 @@ struct ContentView: View {
                 .padding()
             } else {
                 VStack {
+                    Text("Highscore: \(game.highscore)")
+                    Spacer()
                     Text("Runde \(game.round)")
                     Text(game.message)
                     if game.showScore {

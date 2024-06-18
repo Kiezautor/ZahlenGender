@@ -14,6 +14,7 @@ struct Player: Identifiable {
     var gender: Gender
     var randomNumber: Int = 0
     var attemptsLeft: Int = 10
+    
     private var _age: Int = 0
 
     var age: Int {
@@ -29,7 +30,7 @@ struct Player: Identifiable {
         self.name = name
         self.gender = gender
         self.age = age
-    }
+    } 
 }
 
 enum Gender {

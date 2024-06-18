@@ -13,6 +13,7 @@ class Game: ObservableObject {
     @Published var message: String = ""
     @Published var currentPlayerIndex: Int = 0
     @Published var showScore: Bool = false
+    @Published var highscore: Int = UserDefaults.standard.integer(forKey: "highscore")
 
     init(players: [Player]) {
         self.players = players
@@ -106,6 +107,10 @@ class Game: ObservableObject {
     private func updatePlayerScore(_ id: UUID, points: Int) {
         if let index = players.firstIndex(where: { $0.id == id }) {
             players[index].score += points
+            if players[index].score > highscore {
+               highscore = players[index].score
+                UserDefaults.standard.setValue(highscore, forKey: "highscore")
+            }
         }
     }
     
