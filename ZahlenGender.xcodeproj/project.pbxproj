@@ -14,6 +14,11 @@
 		136DF9252C20B533001B9590 /* ZahlenGenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DF9242C20B533001B9590 /* ZahlenGenderTests.swift */; };
 		136DF92F2C20B533001B9590 /* ZahlenGenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DF92E2C20B533001B9590 /* ZahlenGenderUITests.swift */; };
 		136DF9312C20B533001B9590 /* ZahlenGenderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DF9302C20B533001B9590 /* ZahlenGenderUITestsLaunchTests.swift */; };
+		136DF93E2C20B574001B9590 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DF93D2C20B574001B9590 /* Player.swift */; };
+		136DF9402C20B5FF001B9590 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DF93F2C20B5FF001B9590 /* Game.swift */; };
+		136DF9782C2164C9001B9590 /* PlayerSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DF9772C2164C9001B9590 /* PlayerSetupView.swift */; };
+		136DF97A2C216533001B9590 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DF9792C216533001B9590 /* GameView.swift */; };
+		136DF97C2C216587001B9590 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DF97B2C216587001B9590 /* Gender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		136DF92A2C20B533001B9590 /* ZahlenGenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZahlenGenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		136DF92E2C20B533001B9590 /* ZahlenGenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZahlenGenderUITests.swift; sourceTree = "<group>"; };
 		136DF9302C20B533001B9590 /* ZahlenGenderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZahlenGenderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		136DF93D2C20B574001B9590 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		136DF93F2C20B5FF001B9590 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		136DF9772C2164C9001B9590 /* PlayerSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSetupView.swift; sourceTree = "<group>"; };
+		136DF9792C216533001B9590 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		136DF97B2C216587001B9590 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,11 @@
 				136DF9152C20B531001B9590 /* ContentView.swift */,
 				136DF9172C20B533001B9590 /* Assets.xcassets */,
 				136DF9192C20B533001B9590 /* Preview Content */,
+				136DF93D2C20B574001B9590 /* Player.swift */,
+				136DF93F2C20B5FF001B9590 /* Game.swift */,
+				136DF9772C2164C9001B9590 /* PlayerSetupView.swift */,
+				136DF9792C216533001B9590 /* GameView.swift */,
+				136DF97B2C216587001B9590 /* Gender.swift */,
 			);
 			path = ZahlenGender;
 			sourceTree = "<group>";
@@ -257,8 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				136DF9782C2164C9001B9590 /* PlayerSetupView.swift in Sources */,
 				136DF9162C20B531001B9590 /* ContentView.swift in Sources */,
+				136DF93E2C20B574001B9590 /* Player.swift in Sources */,
 				136DF9142C20B531001B9590 /* ZahlenGenderApp.swift in Sources */,
+				136DF97A2C216533001B9590 /* GameView.swift in Sources */,
+				136DF9402C20B5FF001B9590 /* Game.swift in Sources */,
+				136DF97C2C216587001B9590 /* Gender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
